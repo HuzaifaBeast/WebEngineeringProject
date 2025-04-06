@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo animate-logo">
+        <span class="design-text"><b>DESIGN </b></span><b class="studio-text"> STUDIO</b>
+      </div>
+    <div class="nav-toggle">☰</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#ABOUT">About</a></li>
+      <li><a href="#SERVICE">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Our World</h1>
+    <p>we believe your digital presence should be more than just functional <br> it should be unforgettable. That’s why we blend strategy, design, and technology to build experiences that engage your audience, <br> tell your story, and drive real results.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <section id="ABOUT" class="section about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>We are a team of creative minds committed to delivering high-impact digital experiences that drive results. Our passion for innovation and quality fuels everything we do, and we take pride in helping brands grow.</p>
+        <p class="highlight">We focus on quality, creativity, and collaboration to bring your vision to life.</p>
+      </div>
+      <div class="about-image">
+        <img src="./power-of-teamwork.png"  />
+      </div>
+    </div>
+  </section>
+
+  <section id="SERVICE" class="section services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Clean, modern, and responsive websites</p>
+      </div>
+      <div class="service-card">
+        <h3>Game Design</h3>
+        <p>Clean, modern, and responsive games
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Branding</h3>
+        <p>Logos, visual identity, and style guides</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO</h3>
+        <p>Rank higher and gain more visibility</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial left">
+        <blockquote>“This team completely transformed our online presence.”</blockquote>
+      </div>
+      <div class="testimonial right">
+        <blockquote>“Creative, responsive, and results-driven!”</blockquote>
+      </div>
+      <div class="testimonial left">
+        <blockquote>“Highly professional and easy to work with.”</blockquote>
+      </div>
+      <div class="testimonial right">
+        <blockquote>“Their designs speak volumes—very satisfied!”</blockquote>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section contact" >
+    <h2>Contact us</h2>
+    <p style="text-align: center;">Got something on your mind?
+        Whether it's a question, an idea, or a shout-out <br> Drop us a message and we’ll get back to you in no time!</p>
+    
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="first-name"><b>First Name</b></label>
+        <input type="text" id="first-name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="last-name"><b>Last Name</b> </label>
+        <input type="text" id="last-name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="email"><b>Email</b> </label>
+        <input type="email" id="email" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="phone"><b>Phone Number</b> </label>
+        <input type="tel" id="phone" required />
+      </div>
+  
+      <div class="form-group full-width">
+        <label for="message"><b>What do you have in mind</b> </label>
+        <textarea id="message" rows="5" placeholder="Please enter query..." required></textarea>
+      </div>
+  
+      <div class="button-wrapper">
+        <button class="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+  
+  
+  
+  <footer>
+    <p>&copy; 2025 Design Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
